@@ -1,0 +1,95 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.section-wrapper {background-image: url(../img/bg.jpg)}
+
+
+html, body {
+  height: 100%;
+}
+.section-wrapper {
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+.section-wrapper:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  content: "";
+  z-index: -1;
+  opacity: .7;
+}
+
+.tablecell-section {
+  display: table-cell;
+  vertical-align: middle;
+}
+.newsletter-area p {
+  font-size: 30px;
+}
+p.invitation {
+  font-size: 20px;
+}
+.newsletter-area {
+  padding: 0px 350px;
+}
+.newsletter-area input[type=email], .newsletter-area input[type=submit] {
+  width: 100%;
+  border: none;
+  padding: 15px 0px;
+  color: #333;
+  border-radius: 25px;
+}
+.newsletter-area input[type="email"] {
+  padding: 16px 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.newsletter-area input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .3s;
+  background: coral;
+}
+.newsletter-area input[type="submit"]:hover {
+    background-color: lightcoral;
+    color: #fff;
+}
